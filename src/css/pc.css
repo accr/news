@@ -25,3 +25,16 @@ footer{
 {
     display: inline-block !important;
 }
+
+.container{
+    padding-top: 40px;
+}
+.leftContainer{
+    width: 400px;
+    float: left;
+}
+
+.carousel{
+    width: 400px;
+    float: left;
+}
