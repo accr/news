@@ -105,7 +105,7 @@ class PCHeader extends React.Component {
         ? <Menu.Item key="logout" className="register">
             <Button type="primary" htmlType="button">{this.state.userNickName}</Button>
             &nbsp;&nbsp;
-            <Link target="_blank">
+            <Link target="_blank" to={`/usercenter`}>
                 <Button type="dashed" htmlType="button">个人中心</Button>
             </Link>
             &nbsp;&nbsp;
@@ -147,9 +147,6 @@ class PCHeader extends React.Component {
                             </Menu.Item>
                             <Menu.Item key="keji">
                                 <Icon type="appstore" />科技
-                            </Menu.Item>
-                            <Menu.Item key="shishang">
-                                <Icon type="appstore" />时尚
                             </Menu.Item>
                             {userShow}
                         </Menu>
