@@ -14,7 +14,8 @@ import {
     Input,
     Button,
     Checkbox,
-    Modal
+    Modal,
+    Card
 } from 'antd';
 
 const FormItem = Form.Item;
@@ -51,7 +52,7 @@ class CommonComments extends React.Component {
     };
 
     render(){
-        let {getFieldProps} = this.props.form;
+        let {getFieldDecorator} = this.props.form;
         const {comments} = this.state;
         const commnetList = comments.length?
             comments.map((comment,index)=>(
@@ -68,7 +69,7 @@ class CommonComments extends React.Component {
                         {commnetList}
                         <Form onSubmit={this.handleSubmit.bind(this)}>
                             <FormItem label="您的评论">
-                                <Input type="textarea" placeholder="随便写" {...getFieldProps('remark',{initialValue:''})} />
+                                <Input type="textarea" placeholder="随便写" {...getFieldDecorator('remark',{initialValue:''})} />
                             </FormItem>
                             <Button type="primary" htmlType="submit">提交评论</Button>
                         </Form>

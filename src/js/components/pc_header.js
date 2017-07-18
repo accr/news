@@ -48,7 +48,7 @@ class PCHeader extends React.Component {
     };
 
     handleClick(e){
-        if(e.key="register") {
+        if(e.key == "register") {
             this.setState({current:"register"});
             this.setModalVisible(true);
         }
@@ -78,7 +78,7 @@ class PCHeader extends React.Component {
                 localStorage.userid= json.UserId;
                 localStorage.userNickName = json.NickUserName;
         });
-        if (this.state.action=="login") {
+        if (this.state.action == "login") {
             this.setState({hasLogined:true});
         }
         message.success("请求成功！");
