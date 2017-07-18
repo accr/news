@@ -2,7 +2,7 @@
  * Created by AC on 2017/7/16.
  */
 import React from 'react';
-import {Router, Route, Link, browserHistory} from 'react-router'
+import {Router, Route, Link, browserHistory} from 'react-router';
 import {
     Row,
     Col,
